@@ -480,14 +480,14 @@ _t.togglePlaceholders = function () {
 
 
 
-/** _t.addProto(p1, p2) | Задание prototype.__proto__ с сохранением constructor
+/** _t.addPrototype(p1, p2) | Задание prototype.__proto__ с сохранением constructor
 ****************************************************************************************
 * В prototype по умолчанию всегда находится свойство constructor, указывающее
 * на функцию-конструктор. Если мы рассчитываем использовать это свойство, то
 * при замене prototype через Object.create нужно его явно сохранить:
 ****************************************************************************************
 */
-_t.addProto = function (p1, p2) {
+_t.addPrototype = function (p1, p2) {
 	'use strict';
 	p1.prototype = Object.create(p2);
 	p1.prototype.constructor = p1;
