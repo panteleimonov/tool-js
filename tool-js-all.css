@@ -4,3 +4,8 @@
 	padding: 0 2em;
 	text-transform: uppercase;
 }
+.tool-js-form {
+	background: #eee;
+	border: 1px solid #aaa;
+	box-shadow: 0 2px 2em #555;
+}
